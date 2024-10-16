@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <section class="container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg">
+                            <li><a class="text-[#23A204]">Home</a></li>
+                            <li><a>Plant Collection</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <img class="w-20 h-20" src="./images/plant logo 1.png" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg">
+                        <li><a class="text-[#23A204]">Home</a></li>
+                        <li><a>Plant Collection</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-[#5AAC38] text-lg">Sign in</a>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section -->
+        <section class="container mx-auto mt-12 w-full">
+            <!-- <div>
+                <img src="./images/banner.png" alt="">
+            </div> -->
+            <div class="flex justify-between items-center">
+                <div class="w-6/12">
+                    <div class="mb-12">
+                        <h1 class="text-3xl font-medium mb-3">Design and Build Your Unique
+                            Mini Ecosystem</h1>
+                        <p class="text-xl mb-6 w-4/6">Learn the art of combining plants, soil, and
+                            decorative elements to craft a thriving,
+                            self-sustaining.</p>
+                        <button class="bg-[#5AAC38] px-3 py-2 text-xl rounded">Shop Now</button>
+                    </div>
+                    <div class="avatar-group -space-x-6 rtl:space-x-reverse">
+                        <div class="avatar">
+                            <div class="w-12">
+                                <img src="./images/Ellipse 1.png" />
+                            </div>
+                        </div>
+                        <div class="avatar">
+                            <div class="w-12">
+                                <img src="./images/Ellipse 2.png" />
+                            </div>
+                        </div>
+                        <div class="avatar">
+                            <div class="w-12">
+                                <img src="./images/Ellipse 3.png" />
+                            </div>
+                        </div>
+                        <div class="avatar">
+                            <div class="w-12">
+                                <img src="./images/Ellipse 4.png" />
+                            </div>
+                        </div>
+                        <div class="avatar">
+                            <div class="w-12">
+                                <img src="./images/Ellipse 5.png" />
+                            </div>
+                        </div>
+                        <div>
+                            <img class="w-[100px] mr-6 mt-9" src="./images/Vector 2.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-lg text-[#23A204] w-3/6 font-medium">Join Our Community to know more
+                                We are waiting for you!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-6/12 bg-[#E8FFDE] h-[450px] rounded-2xl relative">
+                    <div>
+                        <img class="w-[233px] h-[448px] -ml-[100px]" src="./images/tree 1.png" alt="">
+                    </div>
+                    <div class="bg-white shadow-lg border absolute bottom-8 right-14 w-3/6 p-4 rounded-2xl">
+                        <div class="relative">
+                            <h2 class="text-xl font-medium w-4/6">Elegant Indoor Bird of
+                                Paradise Plant</h2>
+                            <p class="w-4/6">The Bird of Paradise plant is a
+                                stunning addition to any indoor
+                                space, known for its large, lush
+                                green leaves and exotic appeal.</p>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-7 right-0 ">
+                        <img class="w-[211px] h-[333px]" src="./images/tree_1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Category Section -->
+        <section class="container mx-auto mt-12">
+            <h1 class="text-2xl font-medium text-center">Category</h1>
+            <div class="flex justify-between items-center mt-20">
+                <!-- C-1 -->
+                <div class="bg-[#E8FFDE] flex justify-between items-center pr-8 h-[116px] rounded-2xl">
+                    <img class="w-[114px] mb-14" src="./images/indoor plant.png" alt="">
+                    <div>
+                        <h2 class="text-lg font-medium">Indoor Plant</h2>
+                        <button class="bg-[#23A204] px-2 py-1 rounded mt-2 text-white">Shop Now</button>
+                    </div>
+                </div>
+                <!-- C-2 -->
+                <div class="bg-[#E8FFDE] flex justify-between items-center pr-8 h-[116px] rounded-2xl">
+                    <img class="w-[114px] mb-14" src="./images/Outdor Plant.png" alt="">
+                    <div>
+                        <h2 class="text-lg font-medium">Outdoor Plant</h2>
+                        <button class="bg-[#23A204] px-2 py-1 rounded mt-2 text-white">Shop Now</button>
+                    </div>
+                </div>
+                <!-- C-3 -->
+                <div class="bg-[#E8FFDE] flex justify-between items-center pr-8 h-[116px] rounded-2xl">
+                    <img class="w-[114px] mb-14" src="./images/Cactus.png" alt="">
+                    <div>
+                        <h2 class="text-lg font-medium">Cactus</h2>
+                        <button class="bg-[#23A204] px-2 py-1 rounded mt-2 text-white">Shop Now</button>
+                    </div>
+                </div>
+                <!-- C-4 -->
+                <div class="bg-[#E8FFDE] flex justify-between items-center pr-8 h-[116px] rounded-2xl">
+                    <img class="w-[114px] mb-14" src="./images/Bonsai.png" alt="">
+                    <div>
+                        <h2 class="text-lg font-medium">Bonsai</h2>
+                        <button class="bg-[#23A204] px-2 py-1 rounded mt-2 text-white">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Product Section -->
+        <section class="container mx-auto mt-12">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-medium">Featured Product</h1>
+                <p class="text-lg">See all</p>
+            </div>
+            <!-- Product Row 1 -->
+            <div class="flex justify-between items-center gap-10 mt-10">
+                <!-- Product-1 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Pink Silk Aquarium Plants.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Pink Silk Aquarium Plants</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-2 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Aglaonema Plant.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Aglaonema Plant</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-3 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Painter Palette Plant.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Painter Palette Plant</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-4 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Aglaonema Silver Plant.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Aglaonema Silver Plant</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Row 2 -->
+            <div class="flex justify-between items-center gap-10 mt-10">
+                <!-- Product-1 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Baby Rubberplant Plant.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Baby Rubberplant Plant</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-2 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Golden Pothos Plant 1.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Golden Pothos Plant</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-3 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Golden Pothos Plant.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Pothos Plant</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-4 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Silver Queen Plant.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Silver Queen Plant</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- All Product Section -->
+        <section class="container mx-auto mt-12 mb-12">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-medium">All Product</h1>
+                <p class="text-lg">See all</p>
+            </div>
+            <!-- 1st Product Row -->
+            <div class="flex justify-between items-center gap-10 mt-10">
+                <!-- Product-1 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Snake Plant Laurentii.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Snake Plant Laurentii</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-2 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Calathea Orbifolia.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Calathea Orbifolia</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-3 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Kuwu Potted Faux Fern.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Kuwu Potted Faux Fern</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-4 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Indoor Houseplant.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Indoor Houseplant</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd Product Row -->
+            <div class="flex justify-between items-center gap-10 mt-10">
+                <!-- Product-1 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Calathea Roseopicta.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Calathea Roseopicta</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-2 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Swiss Cheese Plant.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Swiss Cheese Plant</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-3 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Peacock Plant.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Peacock Plant</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-4 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Zamioculcas Zamiifolia.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Zamioculcas Zamiifolia</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Short Banner Section -->
+        <section class="container mx-auto mb-12">
+            <div class="flex justify-between items-center gap-10">
+                <div>
+                    <img src="./images/banner-1.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/banner-2.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Product Section -->
+        <section class="container mx-auto">
+            <!-- 1st Product Row -->
+            <div class="flex justify-between items-center gap-10 mt-10">
+                <!-- Product-1 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Pilea Depressa.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Pilea Depressa</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-2 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Dischidia.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Dischidia</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-3 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Spider Plant.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Spider Plant</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-4 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Surfinia Violet.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Surfinia Violet</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd Product Row -->
+            <div class="flex justify-between items-center gap-10 mt-10">
+                <!-- Product-1 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Chinese Sweet Plum.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Chinese Sweet Plum</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-2 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Bonsai2.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Bonsai</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-3 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Satsuki Azalea.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Satsuki Azalea</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-4 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Bougainvillea spectabilis.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Bougainvillea Spectabilis</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between items-center gap-10 mt-10">
+                <!-- Product-1 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Ferocactus Cactus.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Ferocactus Cactus</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-2 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Parodia Leninghausii Cactus.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Parodia Leninghausii Cactus</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-3 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Pilosocereus Cactus.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Pilosocereus Cactus</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product-4 -->
+                <div class="shadow-lg border py-4">
+                    <img src="./images/Haworthia Plant.png" alt="">
+                    <div class="flex justify-between px-6 mt-3">
+                        <div class="text-lg font-medium">
+                            <h1>Haworthia Plant</h1>
+                            <p>৳700.00</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-basket-shopping p-3 bg-[#5AAC38] rounded-lg text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="border-2 border-[#23A204] p-3 text-xl rounded-lg text-[#23A204] font-medium mt-12">Load
+                    More</button>
+            </div>
+        </section>
+    </main>
+    <footer class="mt-12 bg-[#5AAC38]">
+        <section class="py-10">
+            <div class="flex justify-center items-center gap-4 mb-4">
+                <i class="fa-brands fa-facebook-f p-3 bg-white rounded-full"></i>
+                <i class="fa-brands fa-linkedin-in p-3 bg-white rounded-full"></i>
+                <i class="fa-brands fa-instagram p-3 bg-white rounded-full"></i>
+                <i class="fa-brands fa-youtube p-3 bg-white rounded-full"></i>
+                <i class="fa-brands fa-twitter p-3 bg-white rounded-full"></i>
+            </div>
+            <div class="flex justify-center items-center gap-5 text-xl font-medium text-white">
+                <h3>Home</h3>
+                <h3>Shop</h3>
+                <h3>Plants</h3>
+                <h3>About Us</h3>
+                <h3>Contact Us</h3>
+            </div>
+        </section>
+        <div class="bg-[#246114] text-center text-base text-gray-300 py-2">
+            <h3>Copyright ©2024.Designed by Rumi Aktar</h3>
+        </div>
+    </footer>
+</body>
+
+</html>
